@@ -11,5 +11,7 @@ public class Application extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
     	 SpringApplication.run(Application.class, args);
+         int a = 10;
+         String test = "10.10.10.90";
     }
 }
