@@ -24,7 +24,7 @@ mvn clean package
 #### Run
 ```
 mvn spring-boot:run
-open http://localhost:8080/
+open http://localhost:9092/
 ```
 Or
 ```
@@ -36,20 +36,5 @@ java -jar ./target/spring-boot-hello-world-1.0.0-SNAPSHOT.jar
 mvn verify
 ```
 
-#### Docker Build
-```
-mvn package docker:build
-```
-Or
 
-```
-mvn package docker:build -Dmaven.test.skip=true
-```
-
-#### Docker Push
-```
-docker login
-docker tag hello-world-spring-boot kimb88/hello-world-spring-boot
-docker push kimb88/hello-world-spring-boot
-```
 
