@@ -1,4 +1,4 @@
 FROM ubuntu:latest
-COPY ./target/spring-boot-hello-world-1.0.0-SNAPSHOT.jar /app.war
+COPY ./target/example.smallest-0.0.1-SNAPSHOT.jar.original /app.war
 ENTRYPOINT ["java", "-jar" , "/app.war"]
 EXPOSE 9092
